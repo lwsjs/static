@@ -1,0 +1,20 @@
+{
+  "name": "local-web-server-static",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "0.0.0",
+  "description": "local-web-server-static",
+  "repository": "https://github.com/local-web-server/static.git",
+  "license": "MIT",
+  "main": "./lib/static.js",
+  "keywords": [],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "docs": "jsdoc2md -t jsdoc2md/README.md lib/*.js > README.md; echo"
+  },
+  "dependencies": {
+    "koa-static": "^2.0.0"
+  }
+}
