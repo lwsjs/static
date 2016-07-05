@@ -15,6 +15,6 @@
     "docs": "jsdoc2md -t jsdoc2md/README.md lib/*.js > README.md; echo"
   },
   "dependencies": {
-    "koa-static": "^2.0.0"
+    "koa-static": "^3.0.0"
   }
 }
