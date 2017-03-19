@@ -1,14 +1,14 @@
 {
-  "name": "local-web-server-static",
+  "name": "lws-static",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "0.0.0",
-  "description": "local-web-server-static",
-  "repository": "https://github.com/local-web-server/static.git",
+  "description": "lws-static",
+  "repository": "https://github.com/lwsjs/static.git",
   "license": "MIT",
   "main": "./lib/static.js",
   "keywords": [],
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "tape test/*.js",
