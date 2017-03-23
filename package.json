@@ -11,10 +11,13 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "tape test/*.js",
+    "test": "test-runner test/*.js",
     "docs": "jsdoc2md -t jsdoc2md/README.md lib/*.js > README.md; echo"
   },
   "dependencies": {
     "koa-static": "^3.0.0"
+  },
+  "devDependencies": {
+    "test-runner": "^0.3.0"
   }
 }

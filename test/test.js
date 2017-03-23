@@ -1,6 +1,11 @@
-var test = require('tape')
-var lib = require('../')
+const Feature = require('../')
+const TestRunner = require('test-runner')
 
-test('first', function (t) {
+const runner = new TestRunner()
 
+runner.test('basic', function () {
+  const feature = new Feature()
+  feature.optionDefinitions()
+  feature.middleware()
+  feature.middleware({ directory: '.' })
 })
