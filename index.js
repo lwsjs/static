@@ -2,6 +2,9 @@
 const EventEmitter = require('events')
 
 class Static extends EventEmitter {
+  description () {
+    return 'Serves static files.'
+  }
   optionDefinitions () {
     return [
       {
@@ -29,9 +32,9 @@ class Static extends EventEmitter {
     options = options || {}
     const directory = options.directory || process.cwd()
     const staticOptions = { hidden: true }
-    if (options['static.defer']) staticOptions.defer = options['static.defer']
-    if (options['static.maxage']) staticOptions.maxage = options['static.maxage']
-    if (options['static.index']) staticOptions.index = options['static.index']
+    if (options.staticDefer) staticOptions.defer = options.staticDefer
+    if (options.staticMaxage) staticOptions.maxage = options.staticMaxage
+    if (options.staticIndex) staticOptions.index = options.staticIndex
     if (directory) {
       const serve = require('koa-static')
       staticOptions.root = directory

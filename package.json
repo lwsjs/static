@@ -5,14 +5,9 @@
   "description": "Lws feature wrapper for koa-static",
   "repository": "https://github.com/lwsjs/static.git",
   "license": "MIT",
-  "main": "./lib/static.js",
-  "keywords": [],
-  "engines": {
-    "node": ">=4"
-  },
+  "keywords": [ "lws", "static", "server" ],
   "scripts": {
-    "test": "test-runner test/*.js",
-    "docs": "jsdoc2md -t jsdoc2md/README.md lib/*.js > README.md; echo"
+    "test": "test-runner test.js"
   },
   "dependencies": {
     "koa-static": "^3.0.0"
