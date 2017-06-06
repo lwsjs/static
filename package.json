@@ -1,11 +1,15 @@
 {
   "name": "lws-static",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Lws feature wrapper for koa-static",
   "repository": "https://github.com/lwsjs/static.git",
   "license": "MIT",
-  "keywords": [ "lws", "static", "server" ],
+  "keywords": [
+    "lws",
+    "static",
+    "server"
+  ],
   "scripts": {
     "test": "test-runner test.js"
   },
