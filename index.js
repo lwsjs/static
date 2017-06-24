@@ -35,7 +35,7 @@ module.exports = MiddlewareBase => class Stack extends MiddlewareBase {
     if (directory) {
       const serve = require('koa-static')
       staticOptions.root = directory
-      this.emit('verbose', 'static.config', staticOptions)
+      this.emit('verbose', 'middleware.static.config', staticOptions)
       return serve(directory, staticOptions)
     }
   }
