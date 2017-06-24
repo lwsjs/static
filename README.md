@@ -4,18 +4,10 @@
 [![Dependency Status](https://david-dm.org/lwsjs/static.svg)](https://david-dm.org/lwsjs/static)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
-# static
+# lws-static
 
-Lws feature wrapper for [koa-static](https://github.com/koajs/static).
+Lws middleware wrapper for [koa-static](https://github.com/koajs/static). For usage instructions see [here](https://github.com/lwsjs/local-web-server/wiki/How-to-launch-a-development-web-server).
 
-Adds these options to `lws`:
+* * *
 
-```
-Middleware
-
-  -d, --directory path     Root directory, defaults to the current directory.
-  --static.maxage number   Browser cache max-age in milliseconds.
-  --static.defer           If true, serves after `yield next`, allowing any downstream middleware to
-                           respond first.
-  --static.index path      Default file name, defaults to `index.html`.
-```
+&copy; 2017 Lloyd Brookes <75pound@gmail.com>.

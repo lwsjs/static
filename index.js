@@ -1,7 +1,4 @@
-'use strict'
-const EventEmitter = require('events')
-
-class Static extends EventEmitter {
+module.exports = MiddlewareBase => class Stack extends MiddlewareBase {
   description () {
     return 'Serves static files.'
   }
@@ -38,10 +35,8 @@ class Static extends EventEmitter {
     if (directory) {
       const serve = require('koa-static')
       staticOptions.root = directory
-      this.emit('start', staticOptions)
+      this.emit('verbose', 'static.config', staticOptions)
       return serve(directory, staticOptions)
     }
   }
 }
-
-module.exports = Static
