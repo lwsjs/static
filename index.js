@@ -1,4 +1,4 @@
-module.exports = MiddlewareBase => class Stack extends MiddlewareBase {
+module.exports = MiddlewareBase => class Static extends MiddlewareBase {
   description () {
     return 'Serves static files.'
   }
