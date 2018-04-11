@@ -9,7 +9,7 @@ const runner = new TestRunner()
 runner.test('simple', async function () {
   const port = 8000 + this.index
   const lws = new Lws()
-  const server = lws.create({
+  const server = lws.listen({
     port,
     stack: [ Static ],
     directory: 'test/fixture'

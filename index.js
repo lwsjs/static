@@ -8,7 +8,7 @@ module.exports = MiddlewareBase => class Static extends MiddlewareBase {
         name: 'directory',
         alias: 'd',
         type: String,
-        typeLabel: '[underline]{path}',
+        typeLabel: '{underline path}',
         description: 'Root directory, defaults to the current directory.'
       },
       {
@@ -24,7 +24,7 @@ module.exports = MiddlewareBase => class Static extends MiddlewareBase {
       {
         name: 'static.index',
         type: String,
-        typeLabel: '[underline]{path}',
+        typeLabel: '{underline path}',
         description: 'Default file name, defaults to `index.html`.'
       }
     ]
