@@ -1,12 +1,12 @@
-const TestRunner = require('test-runner')
+const Tom = require('test-runner').Tom
 const Static = require('../')
 const Lws = require('lws')
-const request = require('req-then')
+const fetch = require('node-fetch')
 const a = require('assert')
 
-const runner = new TestRunner()
+const tom = module.exports = new Tom('static')
 
-runner.test('simple', async function () {
+tom.test('simple', async function () {
   const port = 8000 + this.index
   const lws = new Lws()
   const server = lws.listen({
@@ -14,7 +14,8 @@ runner.test('simple', async function () {
     stack: [ Static ],
     directory: 'test/fixture'
   })
-  const response = await request(`http://localhost:${port}/one.html`)
-  a.strictEqual(response.data.toString(), 'one\n')
+  const response = await fetch(`http://localhost:${port}/one.html`)
+  const body = await response.text()
+  a.strictEqual(body, 'one\n')
   server.close()
 })

@@ -5,6 +5,9 @@
   "description": "Lws middleware wrapper for koa-static",
   "repository": "https://github.com/lwsjs/static.git",
   "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
   "keywords": [
     "lws",
     "static",
@@ -14,11 +17,14 @@
     "test": "test-runner test/*.js"
   },
   "dependencies": {
-    "koa-static": "^4.0.2"
+    "koa-static": "^5.0.0"
   },
   "devDependencies": {
-    "lws": "^1.2.1",
-    "req-then": "^0.6.4",
-    "test-runner": "^0.5.0"
-  }
+    "lws": "^2.0.0-4",
+    "node-fetch": "^2.6.0",
+    "test-runner": "^0.6.0"
+  },
+  "files": [
+    "index.js"
+  ]
 }

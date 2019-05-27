@@ -1,7 +1,10 @@
-module.exports = MiddlewareBase => class Static extends MiddlewareBase {
+const EventEmitter = require('events')
+
+class Static extends EventEmitter {
   description () {
     return 'Serves static files.'
   }
+
   optionDefinitions () {
     return [
       {
@@ -29,6 +32,7 @@ module.exports = MiddlewareBase => class Static extends MiddlewareBase {
       }
     ]
   }
+
   middleware (options) {
     options = options || {}
     const directory = options.directory || process.cwd()
@@ -44,3 +48,5 @@ module.exports = MiddlewareBase => class Static extends MiddlewareBase {
     }
   }
 }
+
+module.exports = Static

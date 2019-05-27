@@ -1,7 +1,7 @@
 [![view on npm](https://img.shields.io/npm/v/lws-static.svg)](https://www.npmjs.org/package/lws-static)
 [![npm module downloads](https://img.shields.io/npm/dt/lws-static.svg)](https://www.npmjs.org/package/lws-static)
 [![Build Status](https://travis-ci.org/lwsjs/static.svg?branch=master)](https://travis-ci.org/lwsjs/static)
-[![Dependency Status](https://david-dm.org/lwsjs/static.svg)](https://david-dm.org/lwsjs/static)
+[![Dependency Status](https://badgen.net/david/dep/lwsjs/static)](https://david-dm.org/lwsjs/static)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # lws-static
@@ -10,4 +10,4 @@ Lws middleware wrapper for [koa-static](https://github.com/koajs/static). For us
 
 * * *
 
-&copy; 2016-18 Lloyd Brookes <75pound@gmail.com>.
+&copy; 2016-19 Lloyd Brookes \<75pound@gmail.com\>.
