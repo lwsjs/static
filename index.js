@@ -29,17 +29,24 @@ class Static extends EventEmitter {
         type: String,
         typeLabel: '{underline path}',
         description: 'Default file name, defaults to `index.html`.'
+      },
+      {
+        name: 'static.extensions',
+        type: String,
+        multiple: true,
+        typeLabel: '{underline ext}',
+        description: 'One or more default filename extensions. For example, if you set `--static.extensions html` and request `/page` then the server will look for both `page` and `page.html` on disk, serving the latter.'
       }
     ]
   }
 
-  middleware (options) {
-    options = options || {}
-    const directory = options.directory || process.cwd()
+  middleware (config) {
+    const directory = config.directory || process.cwd()
     const staticOptions = { hidden: true }
-    if (options.staticDefer) staticOptions.defer = options.staticDefer
-    if (options.staticMaxage) staticOptions.maxage = options.staticMaxage * 1000
-    if (options.staticIndex) staticOptions.index = options.staticIndex
+    if (config.staticDefer) staticOptions.defer = config.staticDefer
+    if (config.staticMaxage) staticOptions.maxage = config.staticMaxage * 1000
+    if (config.staticIndex) staticOptions.index = config.staticIndex
+    if (config.staticExtensions) staticOptions.extensions = config.staticExtensions
     if (directory) {
       const serve = require('koa-static')
       staticOptions.root = directory
