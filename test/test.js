@@ -8,8 +8,7 @@ const tom = module.exports = new Tom('static')
 
 tom.test('simple', async function () {
   const port = 8000 + this.index
-  const lws = new Lws()
-  const server = lws.listen({
+  const lws = Lws.create({
     port,
     stack: [ Static ],
     directory: 'test/fixture'
@@ -17,5 +16,5 @@ tom.test('simple', async function () {
   const response = await fetch(`http://localhost:${port}/one.html`)
   const body = await response.text()
   a.strictEqual(body, 'one\n')
-  server.close()
+  lws.server.close()
 })
