@@ -10,16 +10,16 @@ Lws middleware plugin to serve static files, wraps [koa-static](https://github.c
 
 Adds the following options to `lws`.
 
-```
---directory, -d path           Root directory, defaults to the current directory.
---static.maxage number         Cache max-age (in seconds) applied to all static resources served.
+<pre><code>
+--directory, -d <u>path</u>           Root directory, defaults to the current directory.
+--static.maxage <u>number</u>         Cache max-age (in seconds) applied to all resources served.
 --static.defer                 If true, serves after `await next`, allowing any downstream middleware to
                                respond first.
---static.index path            Default file name, defaults to `index.html`.
---static.extensions ext        One or more default filename extensions. For example, if you set
+--static.index <u>path</u>            Default file name, defaults to `index.html`.
+--static.extensions <u>ext</u>        One or more default filename extensions. For example, if you set
                                `--static.extensions html` and request `/page` then the server will look for
                                both `page` and `page.html` on disk, serving the latter.
-```
+</pre></code>
 
 * * *
 
