@@ -17,7 +17,7 @@ class Static extends EventEmitter {
       {
         name: 'static.maxage',
         type: Number,
-        description: 'Cache max-age (in seconds) applied to all static resources served.'
+        description: 'Cache max-age (in seconds) applied to all resources served.'
       },
       {
         name: 'static.defer',
