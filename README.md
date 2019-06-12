@@ -6,7 +6,7 @@
 
 # lws-static
 
-Lws middleware plugin to serve static files, wraps [koa-static](https://github.com/koajs/static).
+Lws middleware plugin to serve static files, wraps [koa-static](https://github.com/koajs/static). See [here](https://github.com/lwsjs/local-web-server/wiki/How-to-serve-static-files) for usage instrutions.
 
 Adds the following options to `lws`.
 
