@@ -1,7 +1,8 @@
-[![view on npm](https://img.shields.io/npm/v/lws-static.svg)](https://www.npmjs.org/package/lws-static)
-[![npm module downloads](https://img.shields.io/npm/dt/lws-static.svg)](https://www.npmjs.org/package/lws-static)
-[![Build Status](https://travis-ci.org/lwsjs/static.svg?branch=master)](https://travis-ci.org/lwsjs/static)
-[![Dependency Status](https://badgen.net/david/dep/lwsjs/static)](https://david-dm.org/lwsjs/static)
+[![view on npm](https://badgen.net/npm/v/lws-static)](https://www.npmjs.org/package/lws-static)
+[![npm module downloads](https://badgen.net/npm/dt/lws-static)](https://www.npmjs.org/package/lws-static)
+[![Gihub repo dependents](https://badgen.net/github/dependents-repo/lwsjs/lws-static)](https://github.com/lwsjs/lws-static/network/dependents?dependent_type=REPOSITORY)
+[![Gihub package dependents](https://badgen.net/github/dependents-pkg/lwsjs/lws-static)](https://github.com/lwsjs/lws-static/network/dependents?dependent_type=PACKAGE)
+[![Node.js CI](https://github.com/lwsjs/lws-static/actions/workflows/node.js.yml/badge.svg)](https://github.com/lwsjs/lws-static/actions/workflows/node.js.yml)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # lws-static
@@ -23,4 +24,4 @@ Adds the following options to `lws`.
 
 * * *
 
-&copy; 2016-20 Lloyd Brookes \<75pound@gmail.com\>.
+&copy; 2016-21 Lloyd Brookes \<75pound@gmail.com\>.

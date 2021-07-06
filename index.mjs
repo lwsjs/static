@@ -1,4 +1,5 @@
-const EventEmitter = require('events')
+import EventEmitter from 'events'
+import serve from 'koa-static'
 
 class Static extends EventEmitter {
   description () {
@@ -48,7 +49,6 @@ class Static extends EventEmitter {
     if (config.staticIndex) staticOptions.index = config.staticIndex
     if (config.staticExtensions) staticOptions.extensions = config.staticExtensions
     if (directory) {
-      const serve = require('koa-static')
       staticOptions.root = directory
       this.emit('verbose', 'middleware.static.config', staticOptions)
       return serve(directory, staticOptions)
@@ -56,4 +56,4 @@ class Static extends EventEmitter {
   }
 }
 
-module.exports = Static
+export default Static

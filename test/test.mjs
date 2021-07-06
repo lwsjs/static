@@ -1,14 +1,15 @@
-const Tom = require('test-runner').Tom
-const Static = require('../')
-const Lws = require('lws')
-const fetch = require('node-fetch')
-const a = require('assert')
+import TestRunner from 'test-runner'
+import assert from 'assert'
+import Static from 'lws-static'
+import Lws from 'lws'
+import fetch from 'node-fetch'
 
-const tom = module.exports = new Tom('static')
+const a = assert.strict
+const tom = new TestRunner.Tom()
 
 tom.test('simple', async function () {
   const port = 8000 + this.index
-  const lws = Lws.create({
+  const lws = await Lws.create({
     port,
     stack: [ Static ],
     directory: 'test/fixture'
@@ -21,7 +22,7 @@ tom.test('simple', async function () {
 
 tom.test('default extension', async function () {
   const port = 8000 + this.index
-  const lws = Lws.create({
+  const lws = await Lws.create({
     port,
     stack: [ Static ],
     directory: 'test/fixture',
@@ -32,3 +33,5 @@ tom.test('default extension', async function () {
   a.strictEqual(body, 'one\n')
   lws.server.close()
 })
+
+export default tom
