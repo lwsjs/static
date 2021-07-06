@@ -1,8 +1,8 @@
 [![view on npm](https://badgen.net/npm/v/lws-static)](https://www.npmjs.org/package/lws-static)
 [![npm module downloads](https://badgen.net/npm/dt/lws-static)](https://www.npmjs.org/package/lws-static)
-[![Gihub repo dependents](https://badgen.net/github/dependents-repo/lwsjs/lws-static)](https://github.com/lwsjs/lws-static/network/dependents?dependent_type=REPOSITORY)
-[![Gihub package dependents](https://badgen.net/github/dependents-pkg/lwsjs/lws-static)](https://github.com/lwsjs/lws-static/network/dependents?dependent_type=PACKAGE)
-[![Node.js CI](https://github.com/lwsjs/lws-static/actions/workflows/node.js.yml/badge.svg)](https://github.com/lwsjs/lws-static/actions/workflows/node.js.yml)
+[![Gihub repo dependents](https://badgen.net/github/dependents-repo/lwsjs/static)](https://github.com/lwsjs/static/network/dependents?dependent_type=REPOSITORY)
+[![Gihub package dependents](https://badgen.net/github/dependents-pkg/lwsjs/static)](https://github.com/lwsjs/static/network/dependents?dependent_type=PACKAGE)
+[![Node.js CI](https://github.com/lwsjs/static/actions/workflows/node.js.yml/badge.svg)](https://github.com/lwsjs/static/actions/workflows/node.js.yml)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # lws-static
