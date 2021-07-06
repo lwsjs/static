@@ -1,7 +1,7 @@
 {
   "name": "lws-static",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Lws middleware wrapper for koa-static",
   "repository": "https://github.com/lwsjs/static.git",
   "license": "MIT",
