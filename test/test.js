@@ -11,7 +11,7 @@ tom.test('simple', async function () {
   const port = 8000 + this.index
   const lws = await Lws.create({
     port,
-    stack: [ Static ],
+    stack: [Static],
     directory: 'test/fixture'
   })
   const response = await fetch(`http://localhost:${port}/one.html`)
@@ -24,9 +24,9 @@ tom.test('default extension', async function () {
   const port = 8000 + this.index
   const lws = await Lws.create({
     port,
-    stack: [ Static ],
+    stack: [Static],
     directory: 'test/fixture',
-    staticExtensions: [ 'html' ]
+    staticExtensions: ['html']
   })
   const response = await fetch(`http://localhost:${port}/one`)
   const body = await response.text()

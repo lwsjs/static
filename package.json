@@ -3,12 +3,16 @@
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "3.1.0",
   "description": "Lws middleware wrapper for koa-static",
-  "repository": "https://github.com/lwsjs/static",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwsjs/static.git"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=12.17"
   },
-  "exports": "./index.mjs",
+  "type": "module",
+  "exports": "./index.js",
   "keywords": [
     "lws",
     "lws-middleware",
@@ -16,17 +20,17 @@
     "server"
   ],
   "scripts": {
-    "test": "test-runner test/*.mjs"
+    "test": "test-runner test/*.js"
   },
   "dependencies": {
     "koa-static": "^5.0.0"
   },
   "devDependencies": {
-    "lws": "^4.1.0",
-    "node-fetch": "^2.6.1",
-    "test-runner": "^0.9.8"
+    "lws": "^4.1.4",
+    "node-fetch": "^3.3.2",
+    "test-runner": "^0.11.0"
   },
   "files": [
-    "index.mjs"
+    "index.js"
   ]
 }
