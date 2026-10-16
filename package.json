@@ -1,6 +1,6 @@
 {
   "name": "lws-static",
-  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "author": "Lloyd Brookes <opensource@75lb.com>",
   "version": "3.1.1",
   "description": "Lws middleware wrapper for koa-static",
   "repository": {
