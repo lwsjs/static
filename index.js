@@ -1,5 +1,6 @@
 import EventEmitter from 'events'
 import serve from 'koa-static'
+import arrayBack from 'array-back'
 
 class Static extends EventEmitter {
   description () {
@@ -47,7 +48,7 @@ class Static extends EventEmitter {
     if (config.staticDefer) staticOptions.defer = config.staticDefer
     if (config.staticMaxage) staticOptions.maxage = config.staticMaxage * 1000
     if (config.staticIndex) staticOptions.index = config.staticIndex
-    if (config.staticExtensions) staticOptions.extensions = config.staticExtensions
+    if (config.staticExtensions) staticOptions.extensions = arrayBack(config.staticExtensions)
     if (directory) {
       staticOptions.root = directory
       this.emit('verbose', 'middleware.static.config', staticOptions)
